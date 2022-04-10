@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-box">
+        <h4>Калькулятор стоимости авто</h4>
+        <form> 
+            <div class="user-box">
+               <select id="select_op">
+                    <option id="0" value='0'> Ваш автомобиль</option>
+                    <option id="1" value='6000' > TOYOTA MARK II </option>
+                    <option id="2" value='9000' > LAND CRUISER PRADA</option>
+                    <option id="3" value='7500'> SUZZUKI ESCUDO </option>
+                    <div id="a"></div>
+                </select>
+                <div>Тип услуги</div>
+                <div id="user-box1">
+                    <input id="radio_1" name="usluga" type="radio" value="1" />
+                    <label for="radio_1">Целый</label><br />
+                    <input id="radio_2" name="usluga" type="radio" value="2" />
+                    <label for="radio_2">Распил</label><br />
+                    <div id="b"></div>
+                </div>
+                <div>Возраст автомобиля</div>
+                <div id="user-box2">
+                    <input id="radio_1" name="age" type="radio" value="3" />
+                    <label for="radio_1">до 3х лет</label><br />
+                    <input id="radio_2" name="age" type="radio" value="4" />
+                    <label for="radio_2">свыше 3х лет</label><br />
+                    <div id="c"></div>
+                </div>
+                
+                <button id="btn">Расcчитать</button>
+                <div id="sum"></div>
+                <div id="errorMessage"></div>
+            </div>
+        </form>
+    </div>
+
+    
+
+    <script src="/script.js"></script>
+</body>
+</html>
