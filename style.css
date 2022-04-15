@@ -68,3 +68,8 @@
     width: 50%;
     margin-top: 10px;
   }
+
+  #errorMessage {
+    font-size: 22px;
+    color: red;
+  }
