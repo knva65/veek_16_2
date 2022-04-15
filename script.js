@@ -12,6 +12,7 @@ btn = document.querySelector('#btn');
 sum1 = document.querySelector('#sum1');
 error = document.querySelector('#errorMessage');
 power = document.querySelector('#range');
+moshnost = document.querySelector('.moshnost')
 cost = 450;
 
 
@@ -19,6 +20,8 @@ car.onchange = function () {
     if (car.value == "6000") {car_a.value = 6000}
     if (car.value == "9000") {car_a.value = 9000}
     if (car.value == "7500") {car_a.value = 7500}
+    error.innerHTML = "";
+    sum1.innerHTML = "";
     car_a.innerHTML = ""; 
     car_a.innerHTML += car_a.value+ ' $';
 }
@@ -59,10 +62,11 @@ power.onchange = function(){
 
 
 btn.onclick = function () {
-   if (car_a.value != " " || car_b.value != " " || car_c.value != " ") 
+   if (car.value != "0") 
    {let sum = car_a.value + car_b.value + car_c.value + car_d.value + (power.value*cost);
     sum1.innerHTML = 'Стоимость вашего автомобиля составляет :  ' + sum + ' $';}
-    else {error.innerHTML += "Введите все значения!" }
+    else {error.innerHTML += "Вы не выбрали автомобиль!" }
+   
     
 }
 
