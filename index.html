@@ -9,8 +9,8 @@
 </head>
 <body>
     <div class="form-box">
-        <h4>Калькулятор стоимости авто</h4>
-        <form> 
+        <h3>Калькулятор стоимости авто</h3>
+        <form id="forma"> 
             <div class="user-box">
                <select id="select_op">
                     <option id="0" value="0"> Ваш автомобиль</option>
@@ -19,7 +19,8 @@
                     <option id="3" value="7500"> SUZUKI ESCUDO </option>
                 </select>
                 <div id="am"></div>
-                <div>Тип услуги</div>
+                <br/>
+                <div id="type_1">Тип услуги</div>
                 <div id="user-box1">
                     <input id="radio_1" name="usluga" type="radio" value="1"/>
                     <label for="radio_1">Целый</label><br />
@@ -27,7 +28,8 @@
                     <label for="radio_2">Распил</label><br />
                 </div>
                 <div id="bm"></div>
-                <div>Возраст автомобиля</div>
+                <br/>
+                <div id="type_1">Возраст автомобиля</div>
                 <div id="user-box2">
                     <input id="radio_3" name="age" type="radio" value="3" />
                     <label for="radio_3">до 3х лет</label><br />
@@ -35,9 +37,26 @@
                     <label for="radio_4">свыше 3х лет</label><br />
                     <div id="cm"></div>
                 </div>
-                
+                <br/>
+                <div id="type_1">Топливо</div>
+                <div id="user-box3">
+                    <input id="radio_5" name="oil" type="radio" value="5" />
+                    <label for="radio_5">бензин</label><br />
+                    <input id="radio_6" name="oil" type="radio" value="6" />
+                    <label for="radio_6">дизель</label><br />
+                    
+                </div>
+                <div id="dm"></div>
+                <br/>
+                <div class="form-group col-md-12">
+                    <label for="range">Выберите мощность: <span class="moshnost">0</span> <span>л. с.</span></label><br>
+                    <input type="range" class="custom-range" min="0.5" max="5.0" step="0.5" id="range" value="0.5"/>
+                  </div>
+                <br/>
                 <button id="btn">Расcчитать</button>
-                <div id="sum"></div>
+                <br/>
+                <br/>
+                <div id="sum1"></div>
                 <div id="errorMessage"></div>
             </div>
         </form>
